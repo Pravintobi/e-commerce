@@ -13,7 +13,7 @@ export function ProductGrid() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/productdetails/getAllProduct');
+        const response = await axios.get('https://e-commerce-tqvd.onrender.com/productdetails/getAllProduct');
         const formattedProducts = response.data.map(product => ({
           ...product,
           image: product.image || 'https://via.placeholder.com/300', // Fallback for missing images
