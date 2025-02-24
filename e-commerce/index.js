@@ -1,13 +1,36 @@
-import Express from 'express'
-import approutes from './backend/routes/routeindex.js'
+import express from 'express';
+import cors from 'cors';
+import approutes from './backend/routes/routeindex.js';
+import 'dotenv/config';
 
-import 'dotenv/config'
+const PORT = process.env.PORT || 3000;
 
-const PORT = process.env.PORT
+const app = express();
 
-const app = Express()
+// Define allowed origins
+const allowedOrigins = [
+  'http://localhost:5173', // Vite default development server
+  'https://stirring-sprite-c725cf.netlify.app' // Your Netlify deployed site
+];
 
-app.use(Express.json())
-app.use(approutes)
+// CORS configuration
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true, // Enable if your requests include credentials
+};
 
-app.listen(PORT,()=>console.log("listening " + PORT))
+// Apply CORS middleware
+app.use(cors(corsOptions));
+
+app.use(express.json());
+app.use(approutes);
+
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
