@@ -1,0 +1,290 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Center the form vertically */
+  padding: 20px;
+  margin-left: 115px;
+  background-color: #f4f4f4; /* Background color for contrast */
+}
+
+.custom-hr {
+  border: none;
+  border-top: 1px solid #130e0e; /* Adjust the thickness and color */
+  margin: 10px 0; /* Add some spacing around the line */
+}
+
+.cred {
+  text-align: center; /* Center the text */
+  margin-bottom: 15px; /* Space below the message */
+  font-size: 18px; /* Font size for the welcome message */
+  color: #333; /* Color for the message */
+  font-weight: bold; /* Make it bold */
+}
+
+.form {
+  width: 100%; /* Full width for responsiveness */
+  max-width: 400px; /* Maximum width of the form */
+  padding: 20px;
+  border: 1px solid #ccc; /* Light border around the form */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 14px; 
+  color: #28a745; /* Color for the heading */
+}
+
+label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; 
+  color: #9566ee; /* Bold labels */
+}
+
+.enter{
+  padding: 10px; /* Padding for inputs */
+  width: 330px;
+  height: 45px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.submitid{
+  width: 35%; /* Full width for button */
+  padding: 10px; /* Padding for button */
+  margin-left: 110px;
+  background-color: #007bff; /* Primary color */
+  color: white; /* White text for button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+input {
+  padding: 10px; /* Padding for inputs */
+  margin-bottom: 0px;
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+button {
+  width: 100%; /* Full width for button */
+  padding: 10px; /* Padding for button */
+  background-color: #007bff; /* Primary color */
+  color: white; /* White text for button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.exam-interface {
+  background-color: white; /* Set the background color to white */
+  color: black; /* Set text color to black for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  width: 1122px;
+  margin: 0px 252px;
+}
+
+.exam-header {
+  margin-bottom: 20px;
+}
+
+.exam-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.timer {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #9566ee;
+}
+
+.exam-content {
+  margin-top: 20px;
+}
+
+.question-card {
+  background: white; /* Set the background color of the question card to white */
+  color: black; /* Change text color to black for better contrast */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: -43px;
+  margin-top: -55px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.question-header {
+  display: flex;
+  align-items: center; /* Vertically align the title and difficulty */
+  justify-content: space-between; /* Keep title and difficulty apart */
+  margin-bottom: 5px; /* Reduce the bottom margin */
+  padding: 5px 0; /* Reduce padding if necessary */
+  height: auto; /* Adjust height automatically based on content */
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.difficulty {
+  font-size: 16px;
+  color: #9566ee; /* Optional: Color for difficulty */
+  margin-left: 10px; /* Added margin to separate from the vertical line */
+}
+
+.question-numbers {
+  display: inline-block;
+  width: 25px; /* Adjust width to make it smaller */
+  height: 25px; /* Adjust height to make it a circle */
+  border-radius: 50%; /* Makes it round */
+  background-color: #6d75ff; /* Background color */
+  color: white; /* Text color */
+  text-align: center; /* Center the text inside the circle */
+  line-height: 25px; /* Vertically center the text */
+  margin-right: 8px; /* Space between question numbers */
+  font-size: 14px; /* Adjust the font size */
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.difficulty-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.difficulty {
+  font-size: 16px;
+  color: #9566ee;
+  margin-right: 15px; /* Adds space between difficulty text and question numbers */
+}
+
+.difficulty-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  border-left: 1px solid #000; /* Adjust thickness */
+  height: 43px; /* Adjust height to match the content */
+  margin: 0 8px; /* Reduce space around the vertical line */
+}
+
+.question-numbers-container {
+  display: flex;
+  gap: 10px; /* Adds space between question numbers */
+}
+
+.question-numbers {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #6d75ff;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.question-text {
+  margin: 15px 0;
+}
+
+.options {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column; /* Stack radio buttons vertically */
+}
+
+.options label {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center the radio buttons vertically */
+  margin: 10px 5px;
+}
+
+.options input {
+  margin-right: 8px; /* Space between the radio button and text */
+  padding: 10px; /* Ensure padding around the input */
+  border: 1px solid #ccc; /* Border for the radio button */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.navigation-container {
+  max-width: 460px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-numbers {
+  margin-bottom: 10px;
+}
+
+.question-number {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-number.active {
+  max-width: 49px;
+  margin-left: 1000px;
+  border-radius: 35px;
+  background-color: #6d75ff; /* Highlight active question number */
+}
+
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 185px; /* Adds space between buttons */
+}
+
+.navigation-buttons button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  flex-grow: 1; /* Makes the buttons grow to fill available space */
+}
+
+.submit-button {
+  background-color: red; /* Distinct color for submit button */
+}
+
+.submit-button:hover {
+  background-color: darkred; /* Darker shade on hover */
+}
+
+p {
+  color: black;
+}

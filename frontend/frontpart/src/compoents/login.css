@@ -1,0 +1,99 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100vh; /* Full height */
+  background-color: #f7f7f7; /* Light background for contrast */
+}
+
+.login-content {
+  max-width: 400px; /* Limit the width of the content */
+  background: white; /* Background color for form area */
+  padding: 20px; /* Padding inside the form area */
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.login-title {
+  font-size: 2rem; /* Large title font */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Space below title */
+}
+
+.text-primary {
+  color: #007bff; /* Primary color */
+}
+
+.login-description {
+  color: hsl(217, 10%, 50.8%); /* Description text color */
+  margin-bottom: 1.5rem; /* Space below description */
+}
+
+.login-form {
+  flex: 0 0 400px; /* Set a fixed width for the form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Add some padding inside the form */
+  border: 2px solid #f4f5f6; /* Add a border with a specific color */
+  border-radius: 10px; /* Optional: add border radius for rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+  min-height: 340px; /* Increase minimum height of the form */
+}
+
+.form-input {
+  margin-bottom: 1rem; /* Space between input fields */
+  padding: 10px; /* Inner padding for inputs */
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+  width: 100%; /* Full width */
+}
+
+.form-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 99px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 159px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-field {
+  height: 46px;
+  margin-bottom: 36px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.signup-link {
+  text-align: center; /* Center the signup link */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+}
+
+.signup-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.login-link {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Set link color */
+  margin-left: 143px; /* Set left margin */
+}
+
+.login-form:hover {
+  transform: scale(1.02); 
+}

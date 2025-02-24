@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.text-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.highlight {
+  color: blue;
+}
+
+.description {
+  color: #555;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.signup-form {
+  flex: 0 0 400px; /* Set a fixed width for the form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Add some padding inside the form */
+  border: 2px solid #f4f5f6; /* Add a border with a specific color */
+  border-radius: 10px; /* Optional: add border radius for rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+.input-field {
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 99px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 159px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.signup-button:hover {
+  background-color: darkblue;
+}
+
+.signup-form:hover {
+  transform: scale(1.02); 
+}

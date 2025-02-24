@@ -1,0 +1,30 @@
+.sidebar {
+    width: 250px;
+    background-color: #0679ec; /* Sidebar background color */
+    padding: 20px;
+    position: fixed; /* Keep it on the side */
+    height: 100%; /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.sidebar h2 {
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 20px;
+    color: white; /* Header text color */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.text-white{
+    text-decoration: none;
+}
+
+

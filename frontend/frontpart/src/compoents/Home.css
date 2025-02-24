@@ -1,0 +1,107 @@
+.home-section {
+    margin-left: 250px; /* Make space for the sidebar */
+    padding: 20px; /* Padding for better spacing */
+    background-color: #f8f9fa; /* Light background for contrast */
+    min-height: 100vh; /* Ensure it takes full height */
+}
+
+.home-section h1 {
+    font-size: 46px; /* Heading size */
+    color: #0679ec; /* Main color matching the sidebar */
+}
+
+.home-section p {
+    font-size: 16px; /* Regular text size */
+    color: #333; /* Darker text color for readability */
+}
+
+.about {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Space between text-content and image */
+    align-items: center; /* Align the items vertically in the center */
+    margin-top: 30px; /* Space above the about section */
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column; /* Stack the <p> and button vertically */
+    align-items: flex-start; /* Align text and button to the left */
+    margin-top: -247px;
+  }
+  
+  .text-content p {
+    margin-bottom: 5px; /* Reduce the space between paragraph and button */
+  }
+  
+
+  
+  .image {
+    margin-left: 20px; /* Add space between the text and image */
+  }
+  
+  .image img {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+
+.about p {
+    
+    font-size: 24px;
+    color: rgb(16 185 129);
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.middle {
+    display: flex;               
+    align-items: center;   
+    margin-top: 20px;     
+    justify-content: center;     /* Center items horizontally */
+}
+
+span {
+    margin-bottom: 20px;        /* Use hyphen instead of camelCase */
+    width: 73px;                /* Set the width of circles */
+    height: 73px;               /* Set the height of circles */
+    border-radius: 50%;         /* Make circles */
+    background-color: rgb(227, 61, 61); /* Circle background color */
+    color: white;               /* Text color */
+    display: flex;              /* Use flexbox for text centering */
+    align-items: center;        /* Center text vertically */
+    justify-content: center;     /* Center text horizontally */
+    font-size: 24px;            /* Font size */
+    font-weight: bold;          /* Font weight */
+    margin: 0 10px;            /* Horizontal margin for spacing */
+}
+
+.important-bg {
+    background-color: rgb(61, 61, 185) !important; /* Use !important to override */
+}
+.important-bg1 {
+    background-color: rgb(46, 99, 93) !important; /* Use !important to override */
+}
+
+.line {
+    width: 121px;               /* Set the desired width */
+    height: 2px;               /* Set the desired height */
+    object-fit: fill;           /* Ensure the image fills the dimensions */
+    margin: 0 5px;              /* Add margin for spacing */
+}
+
+.Enroll {
+    margin-top: 10px; /* Add some space between the paragraph and button */
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 20px;
+    cursor: pointer; /* Pointer on hover */
+  }
+
+
+.Enroll:hover{
+    background-color: rgb(247, 36, 36);
+    transform: scale(1.02); 
+}
