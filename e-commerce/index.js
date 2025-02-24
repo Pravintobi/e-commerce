@@ -7,7 +7,7 @@ const PORT = process.env.PORT;
 const app = Express();
 
 // Allow all origins
-app.use(cors({ origin: "*", credentials: true }));
+app.use(cors());
 
 app.use(Express.json());
 app.use(approutes);
